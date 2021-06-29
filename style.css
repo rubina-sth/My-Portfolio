@@ -69,7 +69,30 @@ button {
   cursor: pointer;
 }
 
-/* Navigation */
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 1rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Navigation Bar*/
 
 .header {
   background-color: #404040;
@@ -115,8 +138,6 @@ button {
   transition: color 0.5s ease;
 }
 
-.nav-links a:focus,
-.nav-links a:active,
 .nav-links a:hover {
   color: white;
 }
@@ -228,7 +249,7 @@ button {
   align-items: center;
   margin: 0 2rem;
   width: 25vw;
-  height: 100%;
+  height: 30rem;
   background-color: white;
   border-radius: 1rem;
   text-align: center;
@@ -262,6 +283,7 @@ button {
   text-align: left;
   width: 100%;
   padding: 0 1.5rem;
+  /* overflow-y: scroll; */
 }
 
 .skill-container h3 {
@@ -282,7 +304,7 @@ button {
 }
 
 #projects h2 {
-  min-height: 30vh;
+  min-height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -294,6 +316,7 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
+  padding: 1rem;
 }
 
 .project-container {
@@ -334,6 +357,50 @@ button {
 .project-container .fab {
   color: #404040;
   font-size: 2rem;
+}
+
+/* Resume */
+
+#resume h2 {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-container {
+  width: 80%;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-container img {
+  width: 100%;
+  pointer-events: none;
+  margin-right: 2rem;
+}
+
+.download-resume {
+  display: flex;
+  flex-direction: column;
+  color: #9b8d78;
+  align-self: flex-end;
+  font-size: 1rem;
+  /* font-weight: bold; */
+  text-align: center;
+  padding: 0.3rem;
+  transition: transform 0.3s ease;
+}
+
+.download-resume i {
+  font-size: 2rem;
+  margin-bottom: 0.1rem;
+}
+
+.download-resume:hover {
+  transform: scale(110%);
 }
 
 /* Animations */
