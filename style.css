@@ -333,9 +333,18 @@ button {
 }
 
 .project-container h4,
-.project-container ul {
+.project-container ul,
+.project-container .tools {
   padding: 0.5rem 1rem;
   text-align: center;
+}
+
+.tools span {
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  margin: 0 0.3rem;
 }
 
 .project-container ul {
