@@ -162,12 +162,13 @@ button {
 
 #about {
   background-color: #656565;
+  position: relative;
 }
 
 .about-container {
   width: 90%;
   margin: auto;
-  min-height: 90vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
 }
